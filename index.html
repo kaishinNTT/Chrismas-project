@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Website</title>
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="ldpage.css" />
+    <link rel="stylesheet" href="contactus.css" />
+  </head>
+  <body class="sky">
+    <div class="landing-page">
+      <header>
+        <div class="container">
+          <a href="#" class="logo">Your <b>Website</b></a>
+          <ul class="links">
+            <li>Home</li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li>Work</li>
+            <li>Info</li>
+            <li>Get Started</li>
+          </ul>
+        </div>
+      </header>
+      <div class="content">
+        <div class="container">
+          <div class="info">
+            <h1>Looking For Inspiration</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus odit nihil ullam nesciunt quidem iste, Repellendus
+              odit nihil
+            </p>
+            <button>Button name</button>
+          </div>
+          <div class="image">
+            <img
+              src="https://i.postimg.cc/65QxYYzh/001234.png"
+              alt="Inspiration Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slide 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111-->
+    <div id="aboutUs" class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper" id="card-wrapper">
+          <!-- profile infor -->
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script>
+      var profile = [
+        {
+          name: "Hell01110",
+          description: "This is the first profile.",
+          imgsrc: "images/profile1.jpg",
+          buttonLink: "https://www.youtube.com/",
+        },
+        {
+          name: "Lucas",
+          description: "This is the second profile.",
+          imgsrc: "images/profile2.jpg",
+          buttonLink: "https://www.youtube.com/",
+        },
+        {
+          name: "Another Name",
+          description: "This is the third profile.",
+          imgsrc: "images/profile3.jpg",
+          buttonLink: "https://www.youtube.com/",
+        },
+        {
+          name: "Another Name",
+          description: "This is the fourth profile.",
+          imgsrc: "images/profile4.jpg",
+          buttonLink: "https://www.youtube.com/",
+        },
+        {
+          name: "Another Name",
+          description: "This is the fourth profile.",
+          imgsrc: "images/profile4.jpg",
+          buttonLink: "https://www.youtube.com/",
+        },
+      ];
+
+      // Loop through the profile array and create dynamic cards
+      var cardWrapper = document.getElementById("card-wrapper");
+      for (var i = 0; i < profile.length; i++) {
+        var card = document.createElement("div");
+        card.className = "card swiper-slide";
+
+        var imageContent = document.createElement("div");
+        imageContent.className = "image-content";
+        imageContent.innerHTML =
+          '<span class="overlay"> </span><div class="card-image"><img src="' +
+          profile[i].imgsrc +
+          '" alt="" class="card-img" /></div></div>';
+
+        var cardContent = document.createElement("div");
+        cardContent.className = "card-content";
+        cardContent.innerHTML =
+          '<h2 class="name">' +
+          profile[i].name +
+          '</h2><p class="description">' +
+          profile[i].description +
+          `</p><a href="${profile[i].buttonLink}" class="button">View More</a>`;
+
+        card.appendChild(imageContent);
+        card.appendChild(cardContent);
+
+        cardWrapper.appendChild(card);
+      }
+    </script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- end slide11111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+
+    <!-- start contact form 2222222222222222222222222222222222222222222222222222222222222222-->
+    <div class="form-container">
+      <h1 class="title">Contact Form</h1>
+      <div class="wrapper animated bounceInLeft">
+        <div class="contact">
+          <h3 class="contact-us">Contact Us</h3>
+          <div class="alert">Your message has been sent!</div>
+          <form id="contactForm">
+            <p class="name-field">
+              <label>Name <span>*</span></label>
+              <input type="text" name="name" id="name" required />
+            </p>
+            <p class="company-field">
+              <label>Company</label>
+              <input type="text" name="company" id="company" />
+            </p>
+            <p class="email-field">
+              <label>Email <span>*</span></label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p class="phone-field">
+              <label>Phone</label>
+              <input type="text" name="phone" id="phone" />
+            </p>
+            <p class="message-field full">
+              <label>Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+            <p class="required-field">Required field <span>*</span></p>
+            <p class="submit-button">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end start contact form 2222222222222222222222222222222222222222222222222222222222222222-->
+    <!-- ////////////// -->
+    <script src="snow.js"></script>
+  </body>
+</html>
