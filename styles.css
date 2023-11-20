@@ -6,19 +6,34 @@
 }
 
 body {
-  background-color: #34A65F;
+  /* background-image: url(newssss/pexels-eberhard-grossgasteiger-2086620.jpg); */
+  background-size: cover; 
   margin: 0;
   padding: 0;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Chiều rộng của viewport */
+  height: 100vh; /* Chiều cao của viewport */
+  background-image: url(newssss/0.png);
+  background-size: cover;
+  z-index: -1; /* Đảm bảo nó ở phía sau mọi nội dung khác */
+}
+
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 9px;
+  color: #fff;
 }
 
 .container {
@@ -34,6 +49,7 @@ ul {
   max-width: 100%;
   width: 100%;
   padding: 40px;
+  top: 70px;
 }
 
 .slide-content {
@@ -67,7 +83,8 @@ ul {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #CC231E;
+  background-image: url(newssss/innovations-winter-23-blog-img_10_2022.jpg);
+  background-size: cover ;
   border-radius: 25px 25px 0 25px;
 }
 
@@ -79,7 +96,7 @@ ul {
   bottom: -20px;
   height: 20px;
   width: 25px;
-  background-color: #CC231E;
+  background-color: #c8e9fe;
 }
 
 .overlay::after {
@@ -104,7 +121,7 @@ ul {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid#34A65F;
+  border: 4px solid#C2DCDD;
 }
 
 .name {
@@ -124,7 +141,7 @@ ul {
   font-size: 16px;
   color: #fff;
   padding: 8px 16px;
-  background-color: #ff0000;
+  background-color: #C2DCDD;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
@@ -132,16 +149,16 @@ ul {
 }
 
 .button:hover {
-  background-color: #34A65F;
+  background-color:#536056;
 }
 
 .swiper-navBtn {
-  color: #6e93f7;
+  color: #456164;
   transition: color 0.3s ease;
 }
 
 .swiper-navBtn:hover {
-  color: #ff0000;
+  color: #C2DCDD;
 }
 
 .swiper-navBtn::before,
@@ -158,7 +175,7 @@ ul {
 }
 
 .swiper-pagination.bullet {
-  background-color: #6e93f7;
+  background-color: #0040f1;
   opacity: 1;
 }
 

@@ -8,156 +8,631 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="ldpage.css" />
     <link rel="stylesheet" href="contactus.css" />
+    <link rel="stylesheet" href="brand-client.css" />
+    <link rel="stylesheet" href="logo.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="youtube.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body class="sky">
-    <div class="landing-page">
+    <div class="landing-page" , id="home">
       <header>
         <div class="container">
-          <a href="#" class="logo">Your <b>Website</b></a>
+          <a href="#" class="logo">FURU<b>CRM</b></a>
           <ul class="links">
-            <li>Home</li>
-            <li><a href="#aboutUs">About Us</a></li>
-            <li>Work</li>
-            <li>Info</li>
-            <li>Get Started</li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#leaderships">LEADERSHIP</a></li>
+            <li><a href="#contactushere">CONTACT</a></li>
+            <li><a href="#">Get Started</a></li>
           </ul>
         </div>
       </header>
       <div class="content">
         <div class="container">
           <div class="info">
-            <h1>Looking For Inspiration</h1>
+            <h1>Let's dream with us</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus odit nihil ullam nesciunt quidem iste, Repellendus
-              odit nihil
+              By learning, incorporating, and continuing to refine technology
+              that is evolving every day, we will increase the value of Vietnam
+              offshore development. We play a role in supporting our competitive
+              advantage.
+            </p>
+            <p>
+              Technology shines only when it helps people. We will continue to
+              provide new value to customers and society. I want to be a
+              positive presence.
             </p>
             <button>Button name</button>
           </div>
+          <!-- <div class="image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/SlhESAKF1Tk?si=5oiGnDFwN4n3ucDq"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="position: relative; z-index: 9998"
+            ></iframe>
+          </div> -->
           <div class="image">
-            <img
-              src="https://i.postimg.cc/65QxYYzh/001234.png"
-              alt="Inspiration Image"
-            />
+            <div class="snowflake"></div>
+            <div class="snowflake"></div>
+            <!-- Thêm thêm các tuyết khác nếu bạn muốn -->
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/SlhESAKF1Tk?si=5oiGnDFwN4n3ucDq"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
     </div>
+
     <!-- slide 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111-->
-    <div id="aboutUs" class="slide-container swiper">
-      <div class="slide-content">
-        <div class="card-wrapper swiper-wrapper" id="card-wrapper">
-          <!-- profile infor -->
+    <section id="leaderships">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper" id="card-wrapper">
+            <!-- profile infor -->
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+
+        <script>
+          var profile = [
+            {
+              name: "Hoang Kagawa",
+              description: "Chief Executive Officer",
+              imgsrc: "img/Kagawa.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Kyokazu Mitamura",
+              description: "CTO",
+              imgsrc: "img/Mitamura.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Giang Dao",
+              description: "Salesforce Specialist",
+              imgsrc: "img/giang_dao.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Dung Huynh",
+              description: "CommerceCloud Expert",
+              imgsrc: "img/Dung.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Luc Nguyen",
+              description: "DevOps Expert",
+              imgsrc: "img/Luc.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Dat Nguyen",
+              description: "General Manager",
+              imgsrc: "img/Dat.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Huan Dao",
+              description: "System Integration Consultant",
+              imgsrc: "img/Huan.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Nam Nguyen",
+              description: "System Integration Consultant",
+              imgsrc: "img/Nam.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Bao Ha",
+              description: "System Integration Consultant",
+              imgsrc: "img/Bao.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Thang Bui",
+              description: "System Integration Consultant",
+              imgsrc: "img/Thang.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Hieu Tran",
+              description: "System Integration Consultant",
+              imgsrc: "img/Hieubeo.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Yen Ngo",
+              description: "Hr Manager",
+              imgsrc: "img/Yen.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Tu Uyen",
+              description: "Salesforce Specialist",
+              imgsrc: "img/uyen.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Thuy Ngan ",
+              description: "Salesforce Specialist",
+              imgsrc: "img/thuy_ngan.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Duyen Nguyen",
+              description: "Product Owner",
+              imgsrc: "img/duyen_nguyen.png",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Quang Nguyen",
+              description: "System Integration Consultant",
+              imgsrc: "img/LS_1.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Giang Truong",
+              description: "AWS Solutions Architect",
+              imgsrc: "img/LS_GT.png",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Viet Phan",
+              description: "Commerce Cloud Expert",
+              imgsrc: "img/LS_VP.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Duong Le",
+              description: "Salesforce Architecture",
+              imgsrc: "img/LS_DL.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+            {
+              name: "Kien Tran",
+              description: "Salesforce Architecture",
+              imgsrc: "img/LS_KT.jpg",
+              buttonLink: "https://www.youtube.com/",
+            },
+          ];
+
+          // Loop through the profile array and create dynamic cards
+          var cardWrapper = document.getElementById("card-wrapper");
+          for (var i = 0; i < profile.length; i++) {
+            var card = document.createElement("div");
+            card.className = "card swiper-slide";
+
+            var imageContent = document.createElement("div");
+            imageContent.className = "image-content";
+            imageContent.innerHTML =
+              '<span class="overlay"> </span><div class="card-image"><img src="' +
+              profile[i].imgsrc +
+              '" alt="" class="card-img" /></div></div>';
+
+            var cardContent = document.createElement("div");
+            cardContent.className = "card-content";
+            cardContent.innerHTML =
+              '<h2 class="name">' +
+              profile[i].name +
+              '</h2><p class="description">' +
+              profile[i].description +
+              `</p><a href="${profile[i].buttonLink}" class="button">View More</a>`;
+
+            card.appendChild(imageContent);
+            card.appendChild(cardContent);
+
+            cardWrapper.appendChild(card);
+          }
+        </script>
+      </div>
+      <script src="swiper-bundle.min.js"></script>
+      <script src="script.js"></script>
+    </section>
+    <!-- end slide11111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+    <section class="asx-clients__section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="asx-section__title text-center">
+              <h2>Our Clients</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="asx-clients__row d-none d-lg-block">
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="Resolver logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/resolver.jpg"
+                /></noscript>
+                <img
+                  alt="Resolver logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/resolver.jpg"
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="Co-meeting logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/co-meeting.png "
+                /></noscript>
+                <img
+                  alt="Co-meeting logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/co-meeting.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="DigitalSphere Logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/digitalsphere.png "
+                /></noscript>
+                <img
+                  alt="DigitalSphere Logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/digitalsphere.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="GRCS logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/GRCS.png "
+                /></noscript>
+                <img
+                  alt="GRCS logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/GRCS.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="KI Group logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/ki-group.png "
+                /></noscript>
+                <img
+                  alt="KI Group logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/ki-group.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="savills logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/futureantique.png "
+                /></noscript>
+                <img
+                  alt="savills logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/futureantique.png"
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="savills logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/image7.png"
+                /></noscript>
+                <img
+                  alt="savills logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/image7.png"
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="savills logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/IMT_logo.png"
+                /></noscript>
+                <img
+                  alt="savills logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/IMT_logo.png"
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="savills logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/peacemind_logo.png "
+                /></noscript>
+                <img
+                  alt="savills logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/peacemind_logo.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="savills logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/image12.png"
+                /></noscript>
+                <img
+                  alt="savills logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/image12.png "
+                />
+              </a>
+
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="2"
+                    src="/resource/1677032458000/DF_CUSTOMER/sansanlogo.jpg  "
+                /></noscript>
+                <img
+                  alt="2"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/sansanlogo.jpg "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="TeraWeb logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/teraweb.png "
+                /></noscript>
+                <img
+                  alt="TeraWeb logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/teraweb.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="Sunbridge logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/sunbridge.png "
+                /></noscript>
+                <img
+                  alt="Sunbridge logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/sunbridge.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="CrossAge"
+                    src="/resource/1677032458000/DF_CUSTOMER/logo-crossage.png"
+                /></noscript>
+                <img
+                  alt="CrossAge"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/logo-crossage.png"
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="savills logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/palogo_gray1_w2000_XL.png "
+                /></noscript>
+                <img
+                  alt="savills logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/palogo_gray1_w2000_XL.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="Crefil logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/CREFIL.png "
+                /></noscript>
+                <img
+                  alt="Crefil logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/CREFIL.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="Coretect logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/coretec_logo.png "
+                /></noscript>
+                <img
+                  alt="Coretect logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/coretec_logo.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="kamakurashinsho logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/kamakura.png"
+                /></noscript>
+                <img
+                  alt="kamakurashinsho logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/kamakura.png"
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="Uhuru logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/uhuru.png"
+                /></noscript>
+                <img
+                  alt="Uhuru logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/uhuru.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="Citron logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/citron_logo.png "
+                /></noscript>
+                <img
+                  alt="Citron logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/citron_logo.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="Trech logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/trech_logo.jpeg "
+                /></noscript>
+                <img
+                  alt="Trech logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/trech_logo.jpeg "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="C&amp;R logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/creek_and_river.png "
+                /></noscript>
+                <img
+                  alt="C&amp;R logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/creek_and_river.png "
+                />
+              </a>
+              <a class="asx-client__block" style="cursor: pointer">
+                <noscript
+                  ><img
+                    alt="Hightec logo"
+                    src="/resource/1677032458000/DF_CUSTOMER/hightec.svg?orgId=00D5h00000523kw "
+                /></noscript>
+                <img
+                  alt="Hightec logo"
+                  class="lazyload"
+                  src="/resource/1677032458000/DF_CUSTOMER/hightec.svg?orgId=00D5h00000523kw "
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="swiper-button-next swiper-navBtn"></div>
-      <div class="swiper-button-prev swiper-navBtn"></div>
-      <div class="swiper-pagination"></div>
-    </div>
+    </section>
 
-    <script>
-      var profile = [
-        {
-          name: "Hell01110",
-          description: "This is the first profile.",
-          imgsrc: "images/profile1.jpg",
-          buttonLink: "https://www.youtube.com/",
-        },
-        {
-          name: "Lucas",
-          description: "This is the second profile.",
-          imgsrc: "images/profile2.jpg",
-          buttonLink: "https://www.youtube.com/",
-        },
-        {
-          name: "Another Name",
-          description: "This is the third profile.",
-          imgsrc: "images/profile3.jpg",
-          buttonLink: "https://www.youtube.com/",
-        },
-        {
-          name: "Another Name",
-          description: "This is the fourth profile.",
-          imgsrc: "images/profile4.jpg",
-          buttonLink: "https://www.youtube.com/",
-        },
-        {
-          name: "Another Name",
-          description: "This is the fourth profile.",
-          imgsrc: "images/profile4.jpg",
-          buttonLink: "https://www.youtube.com/",
-        },
-      ];
-
-      // Loop through the profile array and create dynamic cards
-      var cardWrapper = document.getElementById("card-wrapper");
-      for (var i = 0; i < profile.length; i++) {
-        var card = document.createElement("div");
-        card.className = "card swiper-slide";
-
-        var imageContent = document.createElement("div");
-        imageContent.className = "image-content";
-        imageContent.innerHTML =
-          '<span class="overlay"> </span><div class="card-image"><img src="' +
-          profile[i].imgsrc +
-          '" alt="" class="card-img" /></div></div>';
-
-        var cardContent = document.createElement("div");
-        cardContent.className = "card-content";
-        cardContent.innerHTML =
-          '<h2 class="name">' +
-          profile[i].name +
-          '</h2><p class="description">' +
-          profile[i].description +
-          `</p><a href="${profile[i].buttonLink}" class="button">View More</a>`;
-
-        card.appendChild(imageContent);
-        card.appendChild(cardContent);
-
-        cardWrapper.appendChild(card);
-      }
-    </script>
-    <script src="swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-    <!-- end slide11111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+    <!-- end brand client  -->
 
     <!-- start contact form 2222222222222222222222222222222222222222222222222222222222222222-->
-    <div class="form-container">
-      <h1 class="title">Contact Form</h1>
-      <div class="wrapper animated bounceInLeft">
-        <div class="contact">
-          <h3 class="contact-us">Contact Us</h3>
-          <div class="alert">Your message has been sent!</div>
-          <form id="contactForm">
-            <p class="name-field">
-              <label>Name <span>*</span></label>
-              <input type="text" name="name" id="name" required />
-            </p>
-            <p class="company-field">
-              <label>Company</label>
-              <input type="text" name="company" id="company" />
-            </p>
-            <p class="email-field">
-              <label>Email <span>*</span></label>
-              <input type="email" name="email" id="email" required />
-            </p>
-            <p class="phone-field">
-              <label>Phone</label>
-              <input type="text" name="phone" id="phone" />
-            </p>
-            <p class="message-field full">
-              <label>Message</label>
-              <textarea name="message" rows="5" id="message"></textarea>
-            </p>
-            <p class="required-field">Required field <span>*</span></p>
-            <p class="submit-button">
-              <button type="submit">Submit</button>
-            </p>
+    <section class="contact">
+      <div class="content">
+        <h2>Contact Us</h2>
+        <p>
+          We provide application development, customization, collaborative
+          development with other systems, and platform expert services for
+          medium to large-scale projects such as Salesforce, AWS, Heroku, Azure,
+          and Azure OpenAI.
+        </p>
+        <p>
+          We leverage deep expertise in Salesforce, Heroku, Azure, Azure OpenAI,
+          AWS, and GCP platforms to provide flexible, scalable, and
+          cost-effective solutions to customers in the US, Japan, Australia, and
+          Vietnam.
+        </p>
+      </div>
+      <div class="box-contact">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>
+                105-0004<br />
+                東京都 港区新橋3丁目11-8天翔オフィス新橋赤レンガ通りANNEX 803
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>(+81)080-4095-3562</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>contact@furucrm.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form>
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="email" name="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Type your Message....</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send" />
+            </div>
           </form>
         </div>
       </div>
-    </div>
+    </section>
     <!-- end start contact form 2222222222222222222222222222222222222222222222222222222222222222-->
+    <footer id="contactushere">
+      <div class="footer-content-container">
+        <div class="social-container">
+          <a href="" class="social-link"></a>
+          <a href="" class="social-link"></a>
+          <a href="" class="social-link"></a>
+          <a href="" class="social-link"></a>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <span class="copyright"
+          >Copyright © 2018 by furuTeam, www.furucrm.com All rights
+          reserved.</span
+        >
+      </div>
+    </footer>
     <!-- ////////////// -->
     <script src="snow.js"></script>
   </body>
