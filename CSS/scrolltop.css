@@ -1,0 +1,43 @@
+/* .scrollTop{
+    position: fixed;
+    bottom: 70px;
+    right: 5px;
+    padding: 10px 15px;
+    background-color: rgb(255, 47, 0);
+    color: #ffffff;
+    border-radius: 5px;
+    border-radius: 1px soild #fff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    z-index: 9999;
+}
+
+.scrollTop:hover{
+    background-color: greenyellow;
+    color: #fff;
+} */
+
+.scrollTop {
+    position: fixed;
+    bottom: 70px;
+    right: 5px;
+    padding: 10px 15px;
+    background-color: rgb(255, 47, 0);
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    z-index: 9999;
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+.scrollTop.show {
+    opacity: 1; /* Hiển thị nút khi cuộn xuống */
+    pointer-events: auto; /* Cho phép sự kiện click khi hiển thị nút */
+}
+
+.scrollTop:hover {
+    background-color: bisque;
+    color: #fff;
+}

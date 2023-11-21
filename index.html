@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Website</title>
-    <link rel="stylesheet" href="swiper-bundle.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="ldpage.css" />
-    <link rel="stylesheet" href="contactus.css" />
-    <link rel="stylesheet" href="brand-client.css" />
-    <link rel="stylesheet" href="logo.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="youtube.css">
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="CSS/styless.css" />
+    <link rel="stylesheet" href="CSS/ldpage.css" />
+    <link rel="stylesheet" href="CSS/contactus.css" />
+    <link rel="stylesheet" href="CSS/brand-client.css" />
+    <link rel="stylesheet" href="CSS/logo.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/youtube.css" />
+    <link rel="stylesheet" href="CSS/scrolltop.css" />
+    <link rel="stylesheet" href="CSS/aboutus.css" />
+    <script defer src="JS/changetext.js"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +27,7 @@
           <a href="#" class="logo">FURU<b>CRM</b></a>
           <ul class="links">
             <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#aboutus-page">ABOUT US</a></li>
             <li><a href="#leaderships">LEADERSHIP</a></li>
             <li><a href="#contactushere">CONTACT</a></li>
             <li><a href="#">Get Started</a></li>
@@ -34,7 +37,7 @@
       <div class="content">
         <div class="container">
           <div class="info">
-            <h1>Let's dream with us</h1>
+            <h1 class="animated-text">Let's dream with us</h1>
             <p>
               By learning, incorporating, and continuing to refine technology
               that is evolving every day, we will increase the value of Vietnam
@@ -48,18 +51,6 @@
             </p>
             <button>Button name</button>
           </div>
-          <!-- <div class="image">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/SlhESAKF1Tk?si=5oiGnDFwN4n3ucDq"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              style="position: relative; z-index: 9998"
-            ></iframe>
-          </div> -->
           <div class="image">
             <div class="snowflake"></div>
             <div class="snowflake"></div>
@@ -243,8 +234,8 @@
           }
         </script>
       </div>
-      <script src="swiper-bundle.min.js"></script>
-      <script src="script.js"></script>
+      <script src="JS/swiper-bundle.min.js"></script>
+      <script src="JS/script.js"></script>
     </section>
     <!-- end slide11111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
     <section class="asx-clients__section">
@@ -252,7 +243,7 @@
         <div class="row">
           <div class="col">
             <div class="asx-section__title text-center">
-              <h2>Our Clients</h2>
+              <h2>Development Partners</h2>
             </div>
           </div>
         </div>
@@ -543,7 +534,49 @@
     </section>
 
     <!-- end brand client  -->
-
+    <section id="aboutus-page" class="aboutus-cpn">
+      <div class="heading">
+        <h2>About us</h2>
+        <p>
+          We partner with Salesforce's large ISV and SI vendors to provide
+          expert services in application development, customization,
+          collaboration development, and platform. Leveraging our deep expertise
+          in the Salesforce, ServiceNow, Heroku, Azure, AWS, and GCP platforms,
+          we provide flexible, scalable and cost-saving solutions to our
+          customers in Australia, Vietnam and Japan.
+        </p>
+      </div>
+      <div class="containeraboutus">
+        <section class="about-part">
+          <div class="about-image">
+            <img src="newssss/company.png" alt="" />
+          </div>
+          <div class="about-content-aboutus">
+            <h3>News/Blogs</h3>
+            <p>FuruCRM Community</p>
+            <p>
+              Wishing you a joyful Christmas and a prosperous New Year! 🎄🌟
+            </p>
+            <p>
+              As we reflect on the year gone by, we want to express our
+              gratitude for your trust and partnership. At FuruCRM, we're proud
+              to be your go-to IT experts, collaborating with Salesforce,
+              ServiceNow, Heroku, Azure, AWS, and GCP to bring you flexible,
+              scalable solutions.
+            </p>
+            <p>Merry Christmas and Happy New Year!</p>
+            <p>
+              May the festive spirit bring warmth to your homes and hearts.
+              Thank you for a fantastic year, and here's to more success in the
+              coming one!
+            </p>
+            <p>Best,</p>
+            <p>The FuruCRM Team</p>
+            <a href="" class="read-more">Read more</a>
+          </div>
+        </section>
+      </div>
+    </section>
     <!-- start contact form 2222222222222222222222222222222222222222222222222222222222222222-->
     <section class="contact">
       <div class="content">
@@ -607,6 +640,7 @@
             </div>
             <div class="inputBox">
               <textarea required="required"></textarea>
+              <section class="asx-clients__section"></section>
               <span>Type your Message....</span>
             </div>
             <div class="inputBox">
@@ -617,6 +651,9 @@
       </div>
     </section>
     <!-- end start contact form 2222222222222222222222222222222222222222222222222222222222222222-->
+    <div onclick="scrollToTop()" class="scrollTop">Top</div>
+    <script src="JS/scrolltotop.js"></script>
+    <!-- footer -->
     <footer id="contactushere">
       <div class="footer-content-container">
         <div class="social-container">
@@ -634,6 +671,6 @@
       </div>
     </footer>
     <!-- ////////////// -->
-    <script src="snow.js"></script>
+    <script src="JS/snow.js"></script>
   </body>
 </html>
