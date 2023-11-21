@@ -17,11 +17,11 @@ body::before {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; /* Chiều rộng của viewport */
-  height: 100vh; /* Chiều cao của viewport */
+  width: 100vw; 
+  height: 100vh; 
   background-image: url(../newssss/0.png);
   background-size: cover;
-  z-index: -1; /* Đảm bảo nó ở phía sau mọi nội dung khác */
+  z-index: -1; 
 }
 
 a {

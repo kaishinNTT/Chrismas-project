@@ -6,7 +6,7 @@
   
   .snowflake {
     position: absolute;
-    background: #f80000; /* Màu của tuyết */
+    background: #f80000; 
     width: 100px;
     height: 100px;
     border-radius: 50%;

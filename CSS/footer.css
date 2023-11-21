@@ -61,11 +61,11 @@ footer .social-link:nth-of-type(2){
     background-image: url(../logofooter/TwitterBlanco.png);
 }
 
-footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
+footer .social-link:nth-of-type(3){
     background-image: url(../logofooter/LinkedinBlanco.png);
 }
 
-footer .social-link:nth-of-type(4){/*Nth of type inside that container*/
+footer .social-link:nth-of-type(4){
     background-image: url(../logofooter/InstagramBlanco.png);
     width: 40px;
 }

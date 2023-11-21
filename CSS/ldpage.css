@@ -7,7 +7,7 @@
   
   @media (min-width: 992px) {
     .container {
-      width: 970px;
+      width: 1070px;
     }
   }
   
@@ -29,8 +29,8 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff; /* Màu nền của navbar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    background-color: #fff; /* Màu nề của navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     transition: padding 0.3s
   }
   
