@@ -1,0 +1,35 @@
+
+  
+  .image {
+    position: relative;
+  }
+  
+  .snowflake {
+    position: absolute;
+    background: #f80000; 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: snowfall linear infinite;
+  }
+  
+  @keyframes snowfall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+  iframe {
+    width: 560px;
+    height: 319px;
+    position: relative;
+    z-index: 9998;
+    border: 5px solid #C2DCDD;
+    border-radius: 10px; 
+    overflow: hidden; 
+    position: relative; 
+  }
+  

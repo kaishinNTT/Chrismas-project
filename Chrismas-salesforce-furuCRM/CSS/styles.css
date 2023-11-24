@@ -1,0 +1,196 @@
+/* CSS chung */
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-image: url(newssss/pexels-eberhard-grossgasteiger-2086620.jpg); */
+  background-size: cover; 
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-image: url(../newssss/0.png);
+  background-size: cover;
+  z-index: -1; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 9px;
+  color: #fff;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Slide 1 */
+.slide-container {
+  max-width: 100%;
+  width: 100%;
+  padding: 40px;
+  top: 70px;
+}
+
+.slide-content {
+  display: flex;
+  margin: 0 40px;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 20px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../newssss/innovations-winter-23-blog-img_10_2022.jpg);
+  background-size: cover ;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  height: 20px;
+  width: 25px;
+  background-color: #c8e9fe;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+  width: 26px;
+  height: 20px;
+  bottom: -20px;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid#C2DCDD;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #C2DCDD;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color:#536056;
+}
+
+.swiper-navBtn {
+  color: #456164;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #C2DCDD;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 30px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination.bullet {
+  background-color: #0040f1;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color:　#0F8A5F;
+}
+
+@media screen and (max-width: 500px) {
+  .slide-content {
+    flex-direction: column;
+    
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
+

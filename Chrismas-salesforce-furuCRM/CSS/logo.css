@@ -1,0 +1,64 @@
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.asx-clients__section {
+    padding: 0px 0 80px;
+    top : 100px;
+    left: 15%;
+    background-image: url(newssss/backgroudlogo.png);
+    background-size: cover;
+    width: 70%;
+    border-radius: 1%;
+    opacity: 0.7;
+    position: relative;
+    z-index: 999;
+}
+
+.asx-clients__row {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.asx-client__block {
+    width: 19.5%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.asx-client__block img {
+    filter: grayscale(100%);
+    opacity: 0.4;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.asx-client__block:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.asx-client__block:active img {
+    filter: grayscale(0);
+    opacity: 0.9;
+}
+
+
+
+@media (max-width: 991.98px) {
+    .asx-clients__section {
+        padding: 35px 0 40px;
+    }
+    .asx-clients__section::before {
+        display: none;
+    }
+    .asx-clients__section .asx-line {
+        margin: 0 0 30px;
+    }
+}
+
