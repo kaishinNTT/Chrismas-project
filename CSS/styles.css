@@ -19,7 +19,7 @@ body::before {
   left: 0;
   width: 100vw; 
   height: 100vh; 
-  background-image: url(../newssss/0.png);
+  background-image: url(../img/bgpage/0.png);
   background-size: cover;
   z-index: -1; 
 }
@@ -83,7 +83,7 @@ ul {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../newssss/innovations-winter-23-blog-img_10_2022.jpg);
+  background-image: url(../img/bgpage/wintersf.jpg);
   background-size: cover ;
   border-radius: 25px 25px 0 25px;
 }
